@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hil Đẹp Trai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ar-grid" id="ar-grid"></div>
+
+<div class="container">
+    <div class="profile-header" id="profile-container">
+        <div class="profile-image">
+            <img src="img.png" alt="Profile Image">
+        </div>
+
+        <div class="profile-content">
+            <h1 style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 0.5rem;">Trần Đông Hil</h1>
+            <h2 style="font-size: 1.2rem; color: var(--color-secondary); margin-bottom: 1rem;">
+                AR/VR Developer | Front-end Developer | Programmer
+            </h2>
+
+            <div class="section-nav">
+                <button class="section-button active" data-section="about">
+                    <i class="fas fa-user"></i> Giới Thiệu
+                </button>
+                <button class="section-button" data-section="skills">
+                    <i class="fas fa-code"></i> Kỹ Năng
+                </button>
+                <button class="section-button" data-section="projects">
+                    <i class="fas fa-project-diagram"></i> Dự Án
+                </button>
+                <button class="section-button" data-section="experience">
+                    <i class="fas fa-briefcase"></i> Kinh Nghiệm
+                </button>
+            </div>
+
+            <div class="section-content">
+                <div id="about" class="section-text active">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Về Tôi</h3>
+                    <p>
+                        Là một chuyên gia công nghệ với hơn 5 năm kinh nghiệm trong lĩnh vực Augmented Reality và Machine Learning.
+                        Tôi chuyên phát triển các giải pháp công nghệ đột phá, kết hợp giữa trí tuệ nhân tạo và thực tế ảo tăng cường.
+                    </p>
+                </div>
+
+                <div id="skills" class="section-text" style="display:none;">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Kỹ Năng Chuyên Môn</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-react" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h4>React</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vr-cardboard" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h4>AR/VR Dev</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h4>Machine Learning</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h4>Web Development</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h4>Data Science</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-rocket" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h4>Innovation</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projects" class="section-text" style="display:none;">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Dự Án Nổi Bật</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">AR Education Platform</h4>
+                            <p>Nền tảng học tập trực quan sử dụng công nghệ Augmented Reality để cải thiện trải nghiệm học tập.</p>
+                        </div>
+                        <div class="project-card">
+                            <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">AI Visualization Tool</h4>
+                            <p>Công cụ trực quan hóa dữ liệu và mô hình Machine Learning theo thời gian thực.</p>
+                        </div>
+                        <div class="project-card">
+                            <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Mobile AR App</h4>
+                            <p>Ứng dụng di động tích hợp AR để tăng cường trải nghiệm người dùng trong nhiều lĩnh vực.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="experience" class="section-text" style="display:none;">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Lộ Trình Nghề Nghiệp</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Senior AR/VR Developer</h4>
+                            <p>Công ty Công Nghệ Innovations | 2021 - Nay</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Machine Learning Engineer</h4>
+                            <p>Startup Tech Solutions | 2019 - 2021</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Web Developer</h4>
+                            <p>Digital Creative Agency | 2017 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-links">
+                <a href="#" class="contact-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="contact-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="contact-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="contact-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js">
+
+</script>
+</body>
+</html>
